@@ -1,0 +1,462 @@
+/*
+Theme Name: Cafe Coffee Shop
+Theme URI: https://www.vwthemes.com/themes/free-cafe-wordpress-theme/
+Author: VWthemes
+Author URI: https://www.vwthemes.com
+Description: Cafe Coffee Shop is a wonderfully designed theme for cafeteria and coffee shops. It is multipurpose and serves well for restaurants, eateries, and bistros as well. It has a professional look and its design is intuitive and enticing as it has been carved by expert developers. The clean and sophisticated look of this theme will give you an awesome website that will drive people towards your cafe or restaurant. Its minimalist design will let your website load faster as it will keep your visitors' interest alive. CTAs and contact forms make your website more interactive and enable your clients and audience to connect to you easily. An intuitive admin panel provides you with a lot of customization options using which you can hammer out a beautiful website without writing any code. The stunning CSS animations will add new life to your site and make it lively. This modern theme has a retina ready design which makes the content and images of your site look vibrant and perfect. Extend the reach of your business far and wide by using the social media icons for promotion. Cafe Coffee Shop optimized codes and has many other useful features such as WPML compatibility that makes it translation ready, SEO optimization, built-in shortcodes, and much more Check Demo: https://www.vwthemes.net/vw-cafe/
+Template: vw-bakery
+Version: 1.1
+Tested up to: 5.4.2
+Requires PHP: 7.2.14
+License: GNU General Public License
+License URI: license.txt
+Text Domain: cafe-coffee-shop
+Tags: custom-background, custom-menu, custom-colors, custom-logo, featured-images, footer-widgets, one-column, sticky-post, two-columns, theme-options, threaded-comments, right-sidebar, left-sidebar, grid-layout, three-columns, blog, e-commerce, food-and-drink
+*/
+
+/*------- DEFAULT CSS --------*/
+
+body{
+	font-family: 'Poppins', sans-serif !important;
+	color: #6c6c6c !important;
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Playfair Display', sans-serif !important;
+    color: #000000 !important;
+    font-weight: bold;
+}
+a{
+	color: #222222;
+}
+select{
+    outline: none;
+    border-bottom: none;
+}
+
+/*------- COMMON CSS COLOR--------*/
+
+.post-main-box h2 a,
+#footer .tagcloud a:hover,
+.main-navigation ul ul a{
+    color: #311f15;
+}
+.post-main-box:hover h2 a, 
+.post-main-box:hover a,
+.main-navigation a:hover,
+#footer li a:hover,
+a.rsswidget,
+.main-navigation ul.sub-menu a:hover,
+.copyright a:hover,
+.entry-content a, 
+.sidebar .textwidget p a, 
+.textwidget p a, 
+#comments p a,
+.woocommerce ul.products li.product .price, 
+.woocommerce div.product p.price, .woocommerce div.product span.price,
+.product_meta a,
+span.tagged_as a,
+#sidebar a.custom_read_more:hover{
+    color: #b89d64;
+}
+.post-info hr,
+.main-navigation ul ul{
+    border-color: #311f15;
+}
+#comments input[type="submit"].submit,
+#sidebar input[type="submit"],
+.pagination .current,
+.pagination a:hover,
+#comments a.comment-reply-link,
+#sidebar .tagcloud a:hover,
+nav.woocommerce-MyAccount-navigation ul li,
+.woocommerce #respond input#submit,
+.woocommerce a.button,
+.woocommerce button.button, 
+.woocommerce input.button,
+.woocommerce #respond input#submit.alt, 
+.woocommerce a.button.alt,
+.woocommerce button.button.alt,
+.woocommerce input.button.alt,
+.woocommerce span.onsale,
+.scrollup i,
+input[type="submit"]{
+    background: #311f15;
+}
+.pagination span, .pagination a,
+#footer input[type="submit"],
+#comments a.comment-reply-link:hover,
+.woocommerce #respond input#submit:hover, 
+.woocommerce a.button:hover, 
+.woocommerce button.button:hover, 
+.woocommerce input.button:hover, 
+.woocommerce #respond input#submit.alt:hover, 
+.woocommerce a.button.alt:hover,
+.woocommerce button.button.alt:hover, 
+.woocommerce input.button.alt:hover,
+.products li:hover span.onsale,
+.carousel-control-prev-icon i:hover,
+.carousel-control-next-icon i:hover,#footer-2,
+#sidebar .custom-social-icons i:hover,
+#footer .custom-social-icons i:hover{
+    background: #b89d64;
+}
+
+a:focus,
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="phno"]:focus,
+input[type="password"]:focus, 
+input[type="search"]:focus, 
+input[type="tel"]:focus, 
+textarea:focus, 
+input[type="submit"]:focus, 
+#comments:focus, button:focus, 
+select:focus,
+.main-navigation a:focus,
+.main-navigation ul ul a:focus,
+.search-box button:focus,
+.serach_inner input.search-field:focus,
+.serach_inner input.search-submit:focus, 
+button.close:focus{
+    outline: -webkit-focus-ring-color auto 1px;
+}
+
+
+/*------- LOGO CSS --------*/
+
+.logo{
+    position: static;
+    padding: 0;
+}
+.logo h1, .logo p.site-title a {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.logo img {
+    max-height: unset;
+    width: auto;
+    padding: 0;
+}
+.logo h1 a, 
+.logo p.site-title a,#header,
+.copyright a, .copyright p,
+.woocommerce #respond input#submit,
+.woocommerce a.button,
+.woocommerce button.button,
+.woocommerce input.button,
+.woocommerce #respond input#submit.alt,
+.woocommerce a.button.alt,
+.woocommerce button.button.alt,
+.woocommerce input.button.alt,
+.more-btn a,
+.page-content .read-moresec a.error-btn{
+    font-family: 'Playfair Display', sans-serif !important;
+}
+
+/*------- HEADER CSS --------*/
+
+.admin-bar #header {
+    margin-top: 32px;
+}
+#header{
+    background: #311f15;
+}
+#heade-top {
+    padding: 30px 0;
+}
+.left-box {
+    text-align: right;
+}
+#heade-top i {
+    font-size: 40px;
+    color: #b89d64;
+}
+.left-box p,
+.right-box p {
+    margin-bottom: 0;
+    color: #fff;
+    font-size: 16px;
+}
+.page-template-custom-home-page #header{
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+    background: transparent;
+}
+
+/*------- MENUS CSS --------*/
+
+#mySidenav {
+    display: block;
+}
+.page-template-custom-home-page .nav-header {
+    border-bottom: solid 1px #fff;
+}
+.main-navigation ul {
+    margin: 0;
+    text-align: center;
+}
+.main-navigation a {
+    color: #fff;
+    font-size: 13px;
+    padding: 7px 15px;
+    letter-spacing: 2px;
+}
+.main-navigation ul li:hover > ul {
+    padding: 0;
+}
+.nav-header {
+    padding: 20px 0;
+    border-top: solid 1px #fff;
+}
+.main-navigation ul ul{
+    top: 150%;
+}
+.search-box i{
+    padding: 8px 0;
+    color: #fff;
+}
+.close{
+    color: #fff !important;
+}
+.modal-dialog{
+    margin: 0 !important;
+    pointer-events: all !important;
+    max-width: 100% !important;
+}
+.serach_inner{
+    margin: 0 auto;
+}
+.modal-body{
+    width: 100%;
+}
+.modal-open .modal,
+.modal-open{
+    padding: 0 !important;
+}
+.modal-backdrop{
+    z-index: 99 !important;
+}
+/*------- SLIDER CSS --------*/
+
+.carousel-inner:before{
+    content: none;
+}
+#slider {
+    background: #000;
+}
+#slider .inner_carousel{
+    border: none;
+}
+#slider .inner-carousel-conetnt,
+#slider .inner_carousel{
+    position: static;
+}
+#slider .inner_carousel h1 a {
+    color: #fff;
+    font-weight: bold;
+    font-size: 60px;
+}
+#slider .inner_carousel h1{
+    text-align: unset;
+}
+#slider .carousel-caption {
+    top: 55%;
+}
+#slider .carousel-control-prev-icon, 
+#slider .carousel-control-next-icon{
+    font-size: 18px;
+}
+.carousel-control-prev-icon i,
+.carousel-control-next-icon i {
+    border: solid 1px #fff;
+    padding: 12px 15px;
+}
+
+/*------- ABOUT US CSS --------*/
+
+#about-section {
+    padding: 3% 0 0;
+}
+#about-section strong {
+    font-size: 15px;
+    letter-spacing: 10px;
+    color: #999999;
+}
+#about-section h2, h2.bake-sec-title  {
+    text-align: left;
+    text-transform: none;
+    font-size: 35px;
+    font-weight: bold;
+    margin: 15px 0px;
+}
+#about-section p {
+    font-size: 15px;
+    line-height: 2;
+    color: #999;
+}
+.more-btn a,
+.page-content .read-moresec a.error-btn {
+    border: solid 2px;
+    padding: 15px 20px;
+    color: #000;
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+.more-btn a:hover,
+.page-content .read-moresec a.error-btn:hover{
+    background: #b89d64;
+    border-color: #b89d64;
+    color: #fff;
+}
+.more-btn,
+.page-content .read-moresec a.error-btn{
+    margin: 30px 0;
+}
+
+/*------- POST CSS --------*/
+
+a.content-bttn {
+    font-size: 12px;
+    border-bottom: solid 1px;
+    color: #311f15;
+}
+#sidebar .custom-social-icons i{
+    background: #311f15;
+    color: #fff;
+    border: none;
+}
+#sidebar .custom_details {
+    color: #222;
+}
+/*------- WOOCOMMERCE CSS --------*/
+
+#bakery-product .woocommerce ul.products li.product, 
+#bakery-product .woocommerce-page ul.products li.product{
+    width: 22%;
+}
+h2.bake-sec-title {
+    margin-bottom: 35px;
+}
+.related.products h2 {
+    font-weight: bold;
+    text-transform: none;
+}
+
+/*------- FOOTER CSS --------*/
+
+#footer{
+    background: #222222;
+}
+#footer h3 {
+    color: #fff !important;
+    padding: 0;
+}
+#footer .custom-social-icons i{
+  border: 1px solid #b89d64;
+  color: #b89d64;
+}
+#footer .custom-social-icons i:hover{
+  background: #b89d64;
+  color: #fff;
+  border-color: #b89d64;
+}
+#footer .custom_details {
+    color: #fff;
+}
+#footer a.custom_read_more{
+    color: #b89d64;
+}
+/*------- MEDIA CSS --------*/
+
+@media screen and (max-width:720px) {
+    .logo {
+        padding: 30px 0;
+    }
+    #heade-top i {
+        display: block;
+        text-align: right;
+    }
+    .toggle-nav {
+        background: #b89d64;
+    }
+    .page-template-custom-home-page #header {
+        position: static;
+        background: #311f15;
+    }
+    #slider .carousel-caption {
+        bottom: 0;
+        padding:0;
+    }
+    #slider .inner_carousel h1 {
+        display: block;
+        padding: 0;
+        margin-top: 0;
+    }
+    #slider .inner_carousel h1 a {
+        font-size: 18px;
+    }
+    #slider .carousel-control-next {
+        right: 22px;
+    }
+    #bakery-product .woocommerce ul.products li.product,
+    #bakery-product .woocommerce-page ul.products li.product {
+        width: 100%;
+    }
+    .search-box {
+        background: #b89d64;
+        padding: 9px;
+    }
+    .page-template-custom-home-page .nav-header{
+        border: none;
+    }
+}
+
+@media screen and ( max-width: 788px ) and ( min-width: 768px ) {
+    .logo img, .logo, .logo_outer_box{
+        background: transparent;
+    }
+    #bakery-product .woocommerce ul.products li.product,
+    #bakery-product .woocommerce-page ul.products li.product{
+        width: auto;
+    }
+    #slider .carousel-control-prev, #slider .carousel-control-next {
+        bottom: -100px;
+    }
+    #slider .inner_carousel h1 a{
+        font-size: 55px;
+    }
+    #slider .carousel-caption {
+        transform: translateY(-35%);
+    }
+}
+
+@media screen and (max-width: 1000px){   
+    .nav-header{
+        padding: 0;
+        border: 0;
+    }
+    .toggle-nav i,
+    .logo h1 a, .logo p.site-title a, 
+    p.site-description{
+        color: #fff;
+    }
+    .main-navigation ul{
+        top: 0;
+    }
+    #slider .inner-carousel-conetnt {
+        background: transparent;
+        padding: 0;
+    }   
+}
+
+@media screen and ( max-width: 1024px ) and ( min-width: 788px ) {
+    .logo img, .logo, .logo_outer_box,
+    #slider .inner-carousel-conetnt{
+        background: transparent;
+    }
+    #slider .carousel-caption {
+        transform: translateY(-30%);
+    }
+}
